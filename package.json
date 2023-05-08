@@ -1,0 +1,22 @@
+{
+  "name": "chargebtn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/downloadBtn/index.html --open",
+    "clean": "rm -rf dist/*",
+    "build:parcel": "parcel build src/index.html --no-content-hash --no-source-maps --public-url ./",
+    "build": "npm run clean && npm run build:parcel"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.8.3",
+    "add": "^2.0.6",
+    "parcel": "^2.8.3",
+    "yarn": "^1.22.19"
+  },
+  "dependencies": {
+    "gsap": "^3.11.5",
+    "gsap-trial": "^3.11.5"
+  }
+}
