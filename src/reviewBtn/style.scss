@@ -1,0 +1,64 @@
+:root {
+  --c-active: #275EFE;
+  --c-active-inner: #FFFFFF;
+  --c-default: #D2D6E9;
+  --c-default-dark: #C7CBDF;
+  --c-black: #1B1B22;
+}
+
+.button{
+  --text: #fff;
+  --border-radius: 3px;
+  --primary: #8067f1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  border: 0;
+  outline: 0;
+  padding: 0 30px;
+  height: 98px;
+  background: var(--primary);
+  border-radius: var(--border-radius);
+  width: 324px;
+  color: var(--text);
+  cursor: pointer;
+  transform: scale(0.9);
+  font-size: 28px;
+  
+  .motion{
+    margin-top: 15px;
+    .box{
+      width: 20px;
+      height: 20px;
+      stroke-dasharray: var(--sda, 145);
+      stroke-dashoffset: var(--sdo, 0);
+    }
+    .pen{
+      transform: translate(var(--y, 21px), var(--x, 16px));
+      --y: 21px;
+      --x: 16px
+    }
+  }
+}
+
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  // background: #5e42a5;
+}
+svg {
+  width: 55px;
+  height: 50px;
+}
+line,
+path {
+  stroke-width: 1.5px;
+  stroke: var(--text);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
