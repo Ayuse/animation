@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel src/reviewBtn/index.html --open",
+    "dev": "parcel src/slackCardStackClone/index.html --open",
     "clean": "rm -rf dist/*",
     "build:parcel": "parcel build src/index.html --no-content-hash --no-source-maps --public-url ./",
     "build": "npm run clean && npm run build:parcel"
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "gsap": "^3.11.5",
-    "gsap-trial": "^3.11.5"
+    "gsap-trial": "^3.11.5",
+    "split-type": "^0.3.3"
   }
 }

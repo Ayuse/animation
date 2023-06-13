@@ -1,0 +1,172 @@
+:root {
+  --c-active: #275EFE;
+  --c-active-inner: #FFFFFF;
+  --c-default: #D2D6E9;
+  --c-default-dark: #C7CBDF;
+  --c-black: #1B1B22;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #F8F1F1;
+}
+main {
+  display: flex;
+  gap: 5vw;
+  padding: 50px;
+
+  .header_text{
+  font-family: 'Ambit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4vw;
+  line-height: 147px;
+  color: #211E1E;
+    }
+
+    .sub_header{
+    font-family: 'Ambit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 37px;
+    color: #211E1E;
+    width: 605px;
+    }
+
+    .mail_input{
+      position: relative;
+      cursor: pointer; 
+    }
+
+    input{
+      margin-top: 50px;
+      appearance: none;
+      border: none;
+      background: none;
+      width: 460px;
+      font-size: 30px;
+      cursor: pointer; 
+    }
+
+    input:focus-visible{
+      outline: none;
+    }
+
+    .btn{
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      width: 145px;
+    }
+
+    .circle{
+      width: 7px;
+      height: 7px;
+      border-radius: 100%;
+      border: 1px solid #A79A9A;
+    }
+    .subscribe{
+      font-family: 'Ambit';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 28px;
+      color: #898888;
+      cursor: pointer;
+    }
+    label{
+      font-family: 'Ambit';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 28px;
+      color: #B3A0A0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      cursor: pointer; 
+    }
+
+    .oh {
+      position: relative;
+      overflow: hidden
+  }
+  
+  .oh__inner {
+      will-change: transform;
+      display: flex !important;
+  }
+
+  .image > .image__element,
+.image__wrap {
+	transform-origin: inherit;
+	position: relative;
+	grid-area: 1 / 1 / 2 / 2;
+	width: 100%;
+	height: 100%;
+	will-change: transform;
+	border-radius: inherit;
+}
+.image__wrap {
+  overflow: hidden;
+}
+.image__element {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+  .image {
+    max-width: 30vw;
+    margin: 0 1vw;
+    display: grid;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image--style-1 {
+    width: 285px;
+    height: 450px;
+    // border-radius: 145px;
+  }
+
+  .input_stroke{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .stroke_mask{
+  transform: translate(-460px, 0px);
+  }
+  span{
+    position: relative;
+    // background-image: url( './ribbon.svg' );
+
+  }
+  .ribbon{
+    // display: none !important;
+    position: absolute;
+    right: 90px;
+    top: -19px;
+    z-index: -1;
+  }
+  .sub_header_container{
+    position: relative;
+  }
+  .image_wrapper{
+    overflow: clip;
+    clip-path: inset(0 0 100% 0);
+  }
+
+  .arrow{
+    opacity: 0;
+    transform: translate(-3px, -4px);
+  }
+}

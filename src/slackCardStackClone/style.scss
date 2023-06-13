@@ -1,0 +1,98 @@
+:root {
+  --c-active: #275efe;
+  --c-active-inner: #ffffff;
+  --c-default: #d2d6e9;
+  --c-default-dark: #c7cbdf;
+  --c-black: #1b1b22;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #aaddd2;
+}
+
+.card__container {
+  display: flex;
+
+  .workspace_info__content {
+    display: flex;
+    flex-direction: column;
+
+    .workspace_info__members {
+      .avatar_stack {
+        display: flex;
+        img {
+          border: 1px solid #aaddd2;
+          border-radius: 4px;
+          height: 20px;
+          overflow: hidden;
+          text-indent: 100%;
+          white-space: nowrap;
+          width: 20px;
+        }
+        img:not(:first-child) {
+          margin-left: -4px;
+        }
+        img:nth-child(5) {
+          z-index: 1;
+        }
+
+        img:nth-child(4) {
+          z-index: 2;
+        }
+
+        img:nth-child(3) {
+          z-index: 3;
+        }
+
+        img:nth-child(2) {
+          z-index: 4;
+        }
+
+        img:first-child {
+          z-index: 5;
+        }
+      }
+    }
+  }
+}
+
+
+
+.workspace_info__content:hover .avatar {
+  animation: workspace-people-bump .8s cubic-bezier(.455,.03,.515,.955) infinite;
+  animation-delay: .8s
+}
+
+.workspace_info__content:hover .avatar:nth-child(1) {
+  animation-delay: .15s
+}
+.workspace_info__content:hover .avatar:nth-child(2) {
+  animation-delay: .2s
+}
+
+.workspace_info__content:hover .avatar:nth-child(3) {
+  animation-delay: .25s
+}
+
+.workspace_info__content:hover .avatar:nth-child(4) {
+  animation-delay: .35s
+}
+
+.workspace_info__content:hover .avatar:nth-child(5) {
+  animation-delay: .45s
+}
+
+@keyframes workspace-people-bump {
+  0%,30%,to {
+      transform: translateY(0)
+  }
+
+  10% {
+      transform: translateY(-3px)
+  }
+}
+
